@@ -56,3 +56,91 @@ window.addEventListener('DOMContentLoaded', event => {
 function downloadFileClassDiagram() {
     window.location.href='../assets/diagrams/class_diagram.pdf';
 }
+
+function downloadFileUCDiagram() {
+    window.location.href='../assets/img/diagrams/use_case_diagram.png'
+}
+
+function downloadFileUCDDescDiagram() {
+    window.location.href='../assets/diagrams/ucd_popis.pdf';
+}
+
+function downloadAuthenticable() {
+    window.location.href='../assets/codes/Authenticable.h';
+}
+
+function downloadCodeAuthorizationCPP() {
+    window.location.href='../assets/codes/CodeAuthorization.cpp';
+}
+
+function downloadCodeAuthorizationH() {
+    window.location.href='../assets/codes/CodeAuthorization.h';
+}
+
+function downloadEmployeeCPP() {
+    window.location.href='../assets/codes/Employee.cpp';
+}
+
+function downloadEmployeeH() {
+    window.location.href='../assets/codes/Employee.h';
+}
+
+function downloadParkingLotCPP() {
+    window.location.href='../assets/codes/ParkingLot.cpp';
+}
+
+function downloadParkingLotH() {
+    window.location.href='../assets/codes/ParkingLot.h';
+}
+
+function downloadParkingSpotCPP() {
+    window.location.href='../assets/codes/ParkingSpot.cpp';
+}
+
+function downloadParkingSpotH() {
+    window.location.href='../assets/codes/ParkingSpot.h';
+}
+
+function downloadParkingSystemCPP() {
+    window.location.href='../assets/codes/ParkingSystem.cpp';
+}
+
+function downloadParkingSystemH() {
+    window.location.href='../assets/codes/ParkingSystem.h';
+}
+
+function downloadReservationCPP() {
+    window.location.href='../assets/codes/Reservation.cpp';
+}
+
+function downloadReservationH() {
+    window.location.href='../assets/codes/Reservation.h';
+}
+
+function downloadSSOAuthorizationCPP() {
+    window.location.href='../assets/codes/SSOAuthorization.cpp';
+}
+
+function downloadSSOAuthorizationH() {
+    window.location.href='../assets/codes/SSOAuthorization.h';
+}
+
+function downloadStudentCPP() {
+    window.location.href='../assets/codes/Student.cpp';
+}
+
+function downloadStudentH() {
+    window.location.href='../assets/codes/Student.h';
+}
+
+function downloadUserH() {
+    window.location.href='../assets/codes/User.h';
+}
+
+function downloadVisitorCPP() {
+    window.location.href='../assets/codes/Visitor.cpp';
+}
+
+function downloadVisitorH() {
+    window.location.href='../assets/codes/Visitor.h';
+}
