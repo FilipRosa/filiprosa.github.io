@@ -52,3 +52,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function downloadFileClassDiagram() {
+    window.location.href='../assets/diagrams/class_diagram.pdf';
+}
