@@ -58,7 +58,7 @@ function downloadFileClassDiagram() {
 }
 
 function downloadFileUCDiagram() {
-    window.location.href='../assets/img/diagrams/use_case_diagram.png'
+    window.location.href='../assets/img/diagrams/use_case_diagram.png';
 }
 
 function downloadFileUCDDescDiagram() {
@@ -143,4 +143,12 @@ function downloadVisitorCPP() {
 
 function downloadVisitorH() {
     window.location.href='../assets/codes/Visitor.h';
+}
+
+function downloadFileUCDScenar() {
+    window.location.href='../assets/diagrams/ucd_scenar.pdf';
+}
+
+function downloadFileBPMN() {
+    window.location.href='../assets/diagrams/bpmn.pdf';
 }

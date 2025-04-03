@@ -103,7 +103,7 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><div>Scénare Use Cases</div></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><div>Scenáre Use Cases</div></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/scenare_use_case.png" alt="..." />
                         </div>
@@ -468,7 +468,6 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/diagrams/use_case_diagram.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Tento use case diagram znázorňuje funkcionalitu systému pre správu parkovacích miest.</p>
                                     <button class="btn btn-primary" onclick="downloadFileUCDiagram()">
                                         <i class="fas fa-xmark fa-download"></i>
                                         Stiahnuť
@@ -519,7 +518,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Scénare Use Cases</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Scenáre Use Cases</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -527,10 +526,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                    <button class="btn btn-primary" onclick="downloadFileUCDScenar()">
+                                        <i class="fas fa-xmark fa-download"></i>
+                                        Stiahnuť
                                     </button>
                                 </div>
                             </div>
@@ -553,16 +551,15 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-chart-column"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/diagrams/bpmn_prev.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                    <button class="btn btn-primary" onclick="downloadFileBPMN()">
+                                        <i class="fas fa-xmark fa-download"></i>
+                                        Stiahnuť
                                     </button>
                                 </div>
                             </div>
@@ -591,7 +588,6 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/diagrams/class_diagram_prev.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Tento triedny diagram znázorňuje systém správy parkovacích miest a rezervácií. Používatelia (študenti, zamestnanci, návštevníci) môžu vytvárať rezervácie na parkovacie miesta, ktoré sú súčasťou parkovísk. Systém podporuje autentifikáciu pomocou kódu alebo SSO. Každá rezervácia je priradená konkrétnemu užívateľovi a parkovaciemu miestu, pričom celý proces spravuje systém rezervácií.</p>
                                     <button class="btn btn-primary" onclick="downloadFileClassDiagram()">
                                         <i class="fas fa-xmark fa-download"></i>
                                         Stiahnuť
@@ -623,168 +619,136 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Kódy neobsahujú konkrétnu implementáciu metód.</p>
 
-                                    <button class="btn btn-primary mb-4" onclick="downloadAuthenticable()">
-                                        <i class="fas fa-xmark fa-download"></i>
-                                        Authenticable.h
-                                    </button>
+                                    <div class="container text-center">
+                                        <h4 class="mb-4">Súbory na stiahnutie</h4>
+                                        <div class="row">
+                                            <!-- Trieda Authenticable -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">Authenticable</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadAuthenticable()">Authenticable.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- Trieda CodeAuthorization -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">CodeAuthorization</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadCodeAuthorizationCPP()">CodeAuthorization.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadCodeAuthorizationH()">CodeAuthorization.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- Trieda Employee -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">Employee</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadEmployeeCPP()">Employee.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadEmployeeH()">Employee.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Druhý riadok tlačidiel -->
+                                        <div class="row mt-4">
+                                            <!-- Trieda ParkingLot -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">ParkingLot</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadParkingLotCPP()">ParkingLot.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadParkingLotH()">ParkingLot.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadCodeAuthorizationCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                CodeAuthorization.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadCodeAuthorizationH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                CodeAuthorization.h
-                                            </button>
-                                          </div>
+                                            <!-- Trieda ParkingSpot -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">ParkingSpot</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadParkingSpotCPP()">ParkingSpot.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadParkingSpotH()">ParkingSpot.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Trieda ParkingSystem -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">ParkingSystem</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadParkingSystemCPP()">ParkingSystem.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadParkingSystemH()">ParkingSystem.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <!-- Trieda Reservation -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">Reservation</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadReservationCPP()">Reservation.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadReservationH()">Reservation.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Trieda Reservation -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">SSOAuthorization</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadSSOAuthorizationCPP()">SSOAuthorization.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadSSOAuthorizationH()">SSOAuthorization.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <!-- Trieda Visitor -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">Visitor</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadVisitorCPP()">Visitor.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadVisitorH()">Visitor.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Trieda Visitor -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">Student</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadStudentCPP()">Student.cpp</button>
+                                                        <button class="btn btn-primary mb-2" onclick="downloadStudentH()">Student.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Trieda Visitor -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-header">User</div>
+                                                    <div class="card-body">
+                                                        <button class="btn btn-primary mb-2" onclick="downloadUserH()">User.h</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadEmployeeCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Employee.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadEmployeeH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Employee.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadParkingLotCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                ParkingLot.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadParkingLotH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                ParkingLot.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadParkingSpotCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                ParkingSpot.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadParkingSpotH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                ParkingSpot.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadParkingSystemCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                ParkingSystem.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadParkingSystemH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                ParkingSystem.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadReservationCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Reservation.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadReservationH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Reservation.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadSSOAuthorizationCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                SSOAuthorization.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadSSOAuthorizationH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                SSOAuthorization.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadStudentCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Student.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadStudentH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Student.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <button class="btn btn-primary mb-4" onclick="downloadUserH()">
-                                        <i class="fas fa-xmark fa-download"></i>
-                                        User.h
-                                    </button>
-
-                                    <div class="container text-center mb-4">
-                                        <div class="row align-items-start">
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadVisitorCPP()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Visitor.cpp
-                                            </button>
-                                          </div>
-                                          <div class="col">
-                                            <button class="btn btn-primary" onclick="downloadVisitorH()">
-                                                <i class="fas fa-xmark fa-download"></i>
-                                                Visitor.h
-                                            </button>
-                                          </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
