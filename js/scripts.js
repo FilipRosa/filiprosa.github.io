@@ -152,3 +152,7 @@ function downloadFileUCDScenar() {
 function downloadFileBPMN() {
     window.location.href='../assets/diagrams/bpmn.pdf';
 }
+
+function downloadFileActivityDiagram() {
+    window.location.href='../assets/diagrams/activity_diagram.pdf';
+}
