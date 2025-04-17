@@ -172,3 +172,7 @@ function downloadAuthTs() {
 function downloadServiceTs() {
     window.location.href='../assets/codes/ParkingService.ts';
 }
+
+function downloadDoc() {
+    window.location.href='../doc.pdf';
+}
