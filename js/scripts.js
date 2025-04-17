@@ -156,3 +156,19 @@ function downloadFileBPMN() {
 function downloadFileActivityDiagram() {
     window.location.href='../assets/diagrams/activity_diagram.pdf';
 }
+
+function downloadFileSequenceDiagram() {
+    window.location.href='../assets/diagrams/sequence_diagram.pdf';
+}
+
+function downloadParkingTs() {
+    window.location.href='../assets/codes/Parking.ts';
+}
+
+function downloadAuthTs() {
+    window.location.href='../assets/codes/AuthService.ts';
+}
+
+function downloadServiceTs() {
+    window.location.href='../assets/codes/ParkingService.ts';
+}
