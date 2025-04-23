@@ -137,6 +137,10 @@ function downloadUserH() {
     window.location.href='../assets/codes/User.h';
 }
 
+function downloadUserCPP() {
+    window.location.href='../assets/codes/User.cpp';
+}
+
 function downloadVisitorCPP() {
     window.location.href='../assets/codes/Visitor.cpp';
 }
@@ -162,17 +166,21 @@ function downloadFileSequenceDiagram() {
 }
 
 function downloadParkingTs() {
-    window.location.href='../assets/codes/Parking.ts';
+    window.location.href='../assets/codes/Parking.tsx';
 }
 
 function downloadAuthTs() {
-    window.location.href='../assets/codes/AuthService.ts';
+    window.location.href='../assets/codes/AuthService.tsx';
 }
 
 function downloadServiceTs() {
-    window.location.href='../assets/codes/ParkingService.ts';
+    window.location.href='../assets/codes/ParkingService.tsx';
 }
 
 function downloadDoc() {
     window.location.href='../doc.pdf';
+}
+
+function downloadStatechartDiagram() {
+    window.location.href='../assets/diagrams/statechart_diagram.pdf';
 }

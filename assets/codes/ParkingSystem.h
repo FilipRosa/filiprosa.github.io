@@ -3,9 +3,11 @@
 #include <vector>
 #include "Reservation.h"
 
+using namespace std;
+
 class ParkingSystem {
     private:
-        vector<Reservations> reservations;
+        vector<Reservation> reservations;
 
     public:
         void checkAvailability();

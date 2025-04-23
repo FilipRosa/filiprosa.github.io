@@ -6,9 +6,15 @@
 using namespace std;
 
 class SSOAuthorization : public Authenticable {
+    private:
+        string token;
+        bool isAuthenticated;
+
     public:
         bool verifyUser();
-        string generateToken();
+        void generateToken();
         void login() override;
         void logout() override;
+        string getToken();
+        bool isAuthenticated();
 };

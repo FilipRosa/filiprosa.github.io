@@ -5,9 +5,8 @@ bool SSOAuthorization::verifyUser() {
     return true;
 }
 
-string SSOAuthorization::generateToken() {
+void SSOAuthorization::generateToken() {
 
-    return "token";
 }
 
 void SSOAuthorization::login() {
@@ -16,4 +15,14 @@ void SSOAuthorization::login() {
 
 void SSOAuthorization::logout() {
     
+}
+
+string SSOAuthorization::getToken() {
+
+    return token;
+}
+
+bool SSOAuthorization::isAuthenticated() {
+
+    return isAuthenticated;
 }
