@@ -2,6 +2,7 @@
 
 #include <string>
 #include "Authenticable.h"
+#include "Reservation.h"
 using namespace std;
 
 class User {
@@ -13,8 +14,10 @@ class User {
         Authenticable* authStrategy;
 
     public:
-        virtual string getRole() = 0;
-        void login();
-        void logout();
         virtual ~User() = default;
+
+        virtual void login();
+        virtual void logout();
+        virtual string getRole() = 0;
+        Reservation* createReservation();
 };

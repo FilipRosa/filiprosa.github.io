@@ -1,16 +1,17 @@
 #pragma once
 
 #include <vector>
+
 #include "Reservation.h"
 
 using namespace std;
 
 class ParkingSystem {
     private:
-        vector<Reservation> reservations;
+        vector<Reservation*> reservations;
 
     public:
-        void checkAvailability();
-        void confirmReservation();
+        bool checkAvailability();
+        Reservation* confirmReservation();
         void cancelReservation();
 };

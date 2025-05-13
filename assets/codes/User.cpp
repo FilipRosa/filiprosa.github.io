@@ -11,3 +11,7 @@ void User::logout() {
         authStrategy->logout();
     }
 }
+
+Reservation* User::createReservation() {
+    
+}

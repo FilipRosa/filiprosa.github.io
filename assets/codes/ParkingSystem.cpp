@@ -1,6 +1,6 @@
 #include "ParkingSystem.h"
 
-void ParkingSystem::confirmReservation() {
+Reservation* ParkingSystem::confirmReservation() {
 
 }
 
@@ -8,6 +8,6 @@ void ParkingSystem::cancelReservation() {
 
 }
 
-void ParkingSystem::checkAvailability() {
+bool ParkingSystem::checkAvailability() {
     
 }

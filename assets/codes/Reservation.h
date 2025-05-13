@@ -16,7 +16,6 @@ class Reservation {
         chrono::system_clock::time_point timeTo;
 
     public:
-        void create();
         void cancel();
         void change();
 };

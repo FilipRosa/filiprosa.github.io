@@ -8,4 +8,6 @@ class Student : public User {
 
     public:
         string getRole() override;
+        void login() override;
+        void logout() override;
 };
